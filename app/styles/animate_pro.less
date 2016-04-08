@@ -1,0 +1,790 @@
+//动画
+.animated.bounceIn {
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3) rotate(0deg);
+    transform: scale3d(.3, .3, .3) rotate(0deg);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1) rotate(-360deg);
+    transform: scale3d(1, 1, 1) rotate(-360deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
+
+}
+
+
+
+@keyframes bounceInLeft {
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-500px, 0, 0);
+    transform: translate3d(-500px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes bounceInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(500px, 0, 0);
+    transform: translate3d(500px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+  animation-duration: 1.5s;
+}
+
+
+
+.animated.bounceIn1 {
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes bounceIn1 {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+}
+
+.bounceIn1 {
+  animation-name: bounceIn1;
+}
+//圆css
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes circl {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+//三角形顺时针
+@keyframes circle1 {
+  0% {
+    transform-origin:4.5rem 1.95rem;
+    transform-origin:90px 39px  ;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin:4.5rem 1.95rem;
+    transform-origin:90px 39px  ;
+    transform: rotate(-360deg);
+  }
+}
+//三角形逆时针
+@keyframes circle2 {
+  0% {
+    transform-origin: 4.5rem 1.95rem;
+    transform-origin:90px 39px  ;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: 4.5rem 1.95rem;
+    transform-origin:90px 39px  ;
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes zdjpop {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(1.1);
+  }
+
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.5);
+  }
+
+  100% {
+    opacity: 0.2;
+    -webkit-transform: scale(1.1);
+  }
+}
+//逆时针
+.circle {
+  -webkit-animation: circle 30s infinite linear; /*匀速 循环*/
+}
+//顺时针
+.circl {
+  -webkit-animation: circl 30s infinite linear; /*匀速 循环*/
+}
+.circle1 {
+  -webkit-animation: circle1 30s infinite linear; /*匀速 循环*/
+}
+.circle2 {
+  -webkit-animation: circle2 30s infinite linear; /*匀速 循环*/
+}
+
+
+.line1 {
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes line1 {
+
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(71.5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(71.5deg);
+  }
+}
+.line1 {
+  animation-name: line1;
+}
+.line2 {
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-delay: 0.4s;
+}
+
+@keyframes line2 {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-16.5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-16.5deg);
+  }
+}
+.line2 {
+  animation-name: line2;
+}
+
+.line3 {
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-delay: 0.8s;
+}
+
+@keyframes line3 {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-145deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(-145deg);
+  }
+}
+
+.line3 {
+  animation-name: line3;
+}
+.line4 {
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+}
+
+@keyframes line4 {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(104deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(104deg);
+  }
+}
+
+.line4 {
+  animation-name: line4;
+}
+.line5 {
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-delay: 0.4s;
+}
+
+@keyframes line5 {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-24deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(-24deg);
+  }
+}
+
+.line5 {
+  animation-name: line5;
+}
+.line6 {
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-delay: 0.6s;
+}
+
+@keyframes line6 {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-117deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(-117deg);
+  }
+}
+
+.line6 {
+  animation-name: line6;
+}
+
+.lines-1 {
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes lines1-1 {
+
+  0% {
+    opacity: 0;
+    transform: scale(.4) rotate(119deg);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1) rotate(119deg);
+  }
+  17% {
+    opacity: 1;
+    transform: scale(1) rotate(119deg);
+  }
+  27% {
+    opacity: 1;
+    transform: scale(0) rotate(119deg);
+  }
+  31% {
+    opacity: 0;
+    transform: scale(0) rotate(119deg);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(1) rotate(119deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(119deg);
+  }
+}
+.lines1-1 {
+  animation-name: lines1-1;
+}
+
+
+@keyframes lines2-1 {
+
+  0% {
+    opacity: 0;
+    transform: scale(.6) rotate(172deg);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1) rotate(172deg);
+  }
+  24% {
+    opacity: 1;
+    transform: scale(1) rotate(172deg);
+  }
+  34% {
+    opacity: 1;
+    transform: scale(0) rotate(172deg);
+  }
+  35% {
+    opacity: 0;
+    transform: scale(0) rotate(172deg);
+  }
+  79% {
+    opacity: 0;
+    transform: scale(1) rotate(172deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(172deg);
+  }
+}
+.lines2-1 {
+  animation-name: lines2-1;
+}
+
+@keyframes lines3-1 {
+
+  0% {
+    opacity: 0;
+    transform: scale(.6) rotate(236deg);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1) rotate(236deg);
+  }
+  24% {
+    opacity: 1;
+    transform: scale(1) rotate(236deg);
+  }
+  34% {
+    opacity: 1;
+    transform: scale(0) rotate(236deg);
+  }
+  35% {
+    opacity: 0;
+    transform: scale(0) rotate(236deg);
+  }
+  73% {
+    opacity: 0;
+    transform: scale(1) rotate(236deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(236deg);
+  }
+}
+.lines3-1 {
+  animation-name: lines3-1;
+}
+
+
+@keyframes lines4-1 {
+  0% {
+    opacity: 0;
+    transform: scale(.6) rotate(82deg);
+  }
+  2% {
+    opacity: 0;
+    transform: scale(.6) rotate(82deg);
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1) rotate(82deg);
+  }
+  24% {
+    opacity: 1;
+    transform: scale(1) rotate(82deg);
+  }
+  28% {
+    opacity: 1;
+    transform: scale(1) rotate(82deg);
+  }
+  38% {
+    opacity: 1;
+    transform: scale(0) rotate(82deg);
+  }
+  39% {
+    opacity: 0;
+    transform: scale(0) rotate(82deg);
+  }
+  76% {
+    opacity: 0;
+    transform: scale(1) rotate(82deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(82deg);
+  }
+}
+.lines4-1 {
+  animation-name: lines4-1;
+}
+@keyframes lines5-1 {
+  0% {
+    opacity: 0;
+    transform: scale(.5) rotate(23.5deg);
+  }
+  6% {
+    opacity: 0;
+    transform: scale(.6) rotate(23.5deg);
+  }
+  12% {
+    opacity: 1;
+    transform: scale(1) rotate(23.5deg);
+  }
+  37% {
+    opacity: 1;
+    transform: scale(1) rotate(23.5deg);
+  }
+  42% {
+    opacity: 1;
+    transform: scale(0) rotate(23.5deg);
+  }
+  46% {
+    opacity: 0;
+    transform: scale(0) rotate(23.5deg);
+  }
+  82% {
+    opacity: 0;
+    transform: scale(1) rotate(23.5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(23.5deg);
+  }
+}
+.lines5-1 {
+  animation-name: lines5-1;
+}
+@keyframes lines6-1 {
+
+  0% {
+    opacity: 0;
+    transform: scale(.6) rotate(-12deg);
+  }
+  11% {
+    opacity: 0;
+    transform: scale(.6) rotate(-12deg);
+  }
+  17% {
+    opacity: 1;
+    transform: scale(1) rotate(-12deg);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1) rotate(-12deg);
+  }
+  45% {
+    opacity: 1;
+    transform: scale(0) rotate(-12deg);
+  }
+  46% {
+    opacity: 0;
+    transform: scale(1) rotate(-12deg);
+  }
+  84% {
+    opacity: 0;
+    transform: scale(1) rotate(-12deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-12deg);
+  }
+}
+.lines6-1 {
+  animation-name: lines6-1;
+}
+@keyframes lines7-1 {
+
+  0% {
+    opacity: 0;
+    transform: scale(.6) rotate(137deg);
+  }
+  12% {
+    opacity: 0;
+    transform: scale(.6) rotate(137deg);
+  }
+  22% {
+    opacity: 1;
+    transform: scale(1) rotate(137deg);
+  }
+  43% {
+    opacity: 1;
+    transform: scale(1) rotate(137deg);
+  }
+  48% {
+    opacity: 1;
+    transform: scale(0) rotate(137deg);
+  }
+  49% {
+    opacity: 0;
+    transform: scale(0) rotate(137deg);
+  }
+  86% {
+    opacity: 0;
+    transform: scale(1) rotate(137deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(137deg);
+  }
+}
+.lines7-1 {
+  animation-name: lines7-1;
+}
+@keyframes lines8-1 {
+
+  0% {
+    opacity: 0;
+    transform: scale(.6) rotate(104deg);
+  }
+  24% {
+    opacity: 0;
+    transform: scale(.6) rotate(104deg);
+  }
+  34% {
+    opacity: 1;
+    transform: scale(1) rotate(104deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) rotate(104deg);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(0) rotate(104deg);
+  }
+  56% {
+    opacity: 0;
+    transform: scale(0) rotate(104deg);
+  }
+  89% {
+    opacity: 0;
+    transform: scale(1) rotate(104deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(104deg);
+  }
+}
+.lines8-1 {
+  animation-name: lines8-1;
+}
+@keyframes lines9-1 {
+
+  0% {
+    opacity: 0;
+    transform: scale(.4) rotate(197deg);
+  }
+  30% {
+    opacity: 0;
+    transform: scale(.4) rotate(197deg);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1) rotate(197deg);
+  }
+  53% {
+    opacity: 1;
+    transform: scale(1) rotate(197deg);
+  }
+  58% {
+    opacity: 1;
+    transform: scale(0) rotate(197deg);
+  }
+  58% {
+    opacity: 0;
+    transform: scale(1) rotate(197deg);
+  }
+  91% {
+    opacity: 0;
+    transform: scale(1) rotate(197deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(197deg);
+  }
+}
+.lines9-1 {
+  animation-name: lines9-1;
+}
+@keyframes lines10-1 {
+
+  0% {
+    opacity: 0;
+    transform: scale(.6) rotate(49deg);
+  }
+  32% {
+    opacity: 0;
+    transform: scale(.5) rotate(49deg);
+  }
+  37% {
+    opacity: 1;
+    transform: scale(1) rotate(49deg);
+  }
+  53% {
+    opacity: 1;
+    transform: scale(1) rotate(49deg);
+  }
+  58% {
+    opacity: 1;
+    transform: scale(0) rotate(49deg);
+  }
+  58% {
+    opacity: 0;
+    transform: scale(1) rotate(49deg);
+  }
+  93% {
+    opacity: 0;
+    transform: scale(1) rotate(49deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(49deg);
+  }
+}
+.lines10-1 {
+  animation-name: lines10-1;
+}
+
+
+.animated.bounceOut {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounceOut {
+  0% {
+    opacity: .7;
+    -webkit-transform: scale3d(1, 1, 1) rotate(0deg);
+    transform: scale3d(1, 1, 1) rotate(0deg);
+  }
+  to {
+    opacity: .7;
+    -webkit-transform: scale3d(2.7, 2.7, 2.7) rotate(50deg);
+    transform: scale3d(2.7, 2.7,2.7) rotate(50deg);
+  }
+
+  }
+
+
+.bounceOut {
+  animation-name: bounceOut;
+
+}
+
+
+@keyframes Move {
+
+  0% {
+    transform: translate3d(0, -12px, 0);
+  }
+
+  to {
+    transform: translate3d(0px, -50px, 0);
+  }
+}
+
+.Move {
+  animation-name: Move;
+  animation-duration: 1.5s;
+}
+
+@keyframes Move1 {
+
+  0% {
+    transform: translate3d(5px, -40px, 0);
+  }
+
+  to {
+    transform: translate3d(-50px, -20px, 0);
+  }
+}
+
+.Move1 {
+  animation-name: Move1;
+  animation-duration: 1.5s;
+}
+
+@keyframes Move2 {
+
+  0% {
+    transform: translate3d(-50px, -20px, 0);
+  }
+
+  to {
+    transform: translate3d(0px, -50px, 0);
+  }
+}
+
+.Move2 {
+  animation-name: Move2;
+  animation-duration: 1.5s;
+}
+
+@keyframes Move3 {
+
+  0% {
+    transform: translate3d(5px, -40px, 0);
+  }
+
+  to {
+    transform: translate3d(-30px, -62px, 0);
+  }
+}
+
+.Move3 {
+  animation-name: Move3;
+  animation-duration: 1.5s;
+}
+
+@keyframes Move4 {
+
+  0% {
+    transform: translate3d(-30px, -62px, 0);
+  }
+
+  to {
+    transform: translate3d(0px, -50px, 0);
+  }
+}
+
+.Move4 {
+  animation-name: Move4;
+  animation-duration: 1.5s;
+}
+
+@keyframes Move5 {
+
+  0% {
+    transform: translate3d(5px, -40px, 0);
+  }
+
+  to {
+    transform: translate3d(11px, -27px, 0);
+  }
+}
+
+.Move5 {
+  animation-name: Move5;
+  animation-duration: 1.5s;
+}
